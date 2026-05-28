@@ -98,8 +98,8 @@ export default function AchievementsPage() {
                       <div className="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
                         <div
                           className="h-full bg-gradient-to-r from-blue-500 to-blue-400"
-                          style={{ width: `${(parseInt(achievement.progress.split("/")[0]) / parseInt(achievement.progress.split("/")[1])) * 100}%` }}
-                        />
+                          style={{ width: `${achievement.progress ?? 0}%` }}>
+                        </div>  
                       </div>
                     </div>
                   )}
