@@ -72,13 +72,6 @@ cp .env.example .env.local
 npm run dev
 ```
 
-## Deployment (Vercel)
-
-1. Push to a public GitHub repo
-2. Import into Vercel
-3. Add `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` in Vercel's Environment Variables panel
-4. Deploy — no build config needed
-
 ## Challenges
 
 - **Async Server Components with TypeScript**: Next.js 14's async RSC pattern requires a `@ts-expect-error` comment when nesting async components inside `<Suspense>`, as the TS types don't yet model this cleanly.
