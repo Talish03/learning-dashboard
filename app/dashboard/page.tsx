@@ -70,7 +70,6 @@ export default function DashboardPage() {
 
         {/* Content */}
         <Suspense fallback={<BentoGridSkeleton />}>
-          {/* @ts-expect-error Async Server Component */}
           <DashboardContent />
         </Suspense>
       </div>
